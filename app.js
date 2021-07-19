@@ -14,8 +14,8 @@ function renderCafe(doc){
 }
 
 
-db.collection('Everything').get().then(snapshot) => {
+db.collection('Everything').get().then(snapshot => {
     snapshot.docs.forEach(doc => {
         renderCafe(doc);
     })
-}
+})
